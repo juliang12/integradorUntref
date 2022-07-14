@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Rubik:wght@300;400;800&display=swap');
+
+:root{
+    --main-color: #7D9D9C;
+    --second-color: #F0EBE3;
+    --over-color: #E4DCCF;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container__body{
+    width: 100%;
+}
+
+.container__header{
+    width: 100%;
+
+}
+
+.nav__container{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    background-color: var(--second-color);
+    padding: 0 40px;
+}
+
+.nav__ul{
+    width: 100%;
+    max-width: 1360px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav__li{
+    padding: 0 10px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav__li a{
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 13px 16px;
+}
+
+.nav__li a:hover{
+    background-color: var(--over-color);;
+}
+
+.li__container{
+    display: flex;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__primary{
+    font-size: 2.5vw;
+    color: #E4DCCF;
+    text-transform: uppercase;
+}
+
+.title_secondary{
+    font-size: 20px;
+    max-width: 40ch;
+    color: #7D9D9C;
+    padding: 10px 30px;
+    margin: 15px;
+   text-transform: uppercase;
+   font-weight: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container_btn button{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: var(--over-color);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #7D9D9C;
+}
+
+/*BANNER*/
+.banner__container{
+    width: 100%;
+    background-image: url(./assets/fitness.jpg);
+    background-size: cover;
+    display: flex;
+    max-width: 1360px;
+    height: 600px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.icon__mobil img{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 858px) {
+    .icon_check img{
+        width: 30px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .li__container{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7D9D9C;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+
+    .nav__li{
+        font-size: 30px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .check_input:checked + .li__container{
+        left: 0;
+    }
+    .title__primary{
+        font-size: 5vw;
+        color: #E4DCCF;
+        text-transform: uppercase;
+    }
+
+    .title_secondary{
+        font-size: 15px;
+    }
+
+}
+
+/*GRID*/
+
+.container__grid{
+    width: 100%;
+    max-width: 1360px;
+    background-color: var(--over-color);
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.grid{
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    background-color: var(--second-color);
+
+}
+
+.product{
+    width: 350px;
+    margin: 15px;
+}
+
+.img__container
+{
+    width: 350px;
+    height: 350px;
+    background-image: var(--i);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+.img__container:hover{
+    opacity: .5;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.title_product{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #ffffff3d;
+}
+
+.description{
+    font-size: 20px;
+    padding: 10px 5px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #7fa09f52;
+    /* background-color: #837e7556; */
+}
+
+.title__container{
+    width: 100%;
+    margin: 3rem 0;
+    font-size: 2.5vw;
+    color: #202020;
+    background-color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 858px) {
+    .title__container{
+        width: 100%;
+        margin: 3rem 0;
+        font-size: 5vw;
+        color: #202020;
+        background-color: #000;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+/*Formulario*/
+
+
+
+.container__form{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+label{
+    margin: 10px 5px;
+}
+
+input{
+    height: 40px;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+.inputs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+}
+
+.button__container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    padding: 10px 55px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    background-image: linear-gradient(to right, #485563 0%, #485563  100%);         
+}
+
+.button:hover{
+    opacity: .8;
+}
+
+
+/*ABOUT*/
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image__about img{
+width: 400px;
+background-color: #000;
+padding: 10px;
+}
+
+
+.about__text h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 858px) {
+    .about{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__text h2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px;
+        font-size: 20px;
+    }
+    .image__about img{
+        width: 300px;
+        background-color: #000;
+        padding: 10px;
+        }
+}
+/*Footer*/
+
+.footer h3{
+    width: 100%;
+    height: 60px;
+    background-color: darkgray;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

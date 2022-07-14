@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a4c115dc4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>UrbanFitness</title>
+</head>
+
+<body>
+    <div class="container__body" id="home">
+        <header class="container__header">
+            <nav class="nav__container">
+                <ul class="nav__ul">
+                    <div class="logo">
+                        <h1>UF</h1>
+                    </div>
+                    <label for="check" class="icon_check">
+                        <img src="assets/bars.svg" alt="">
+                    </label>
+                    <input type="checkbox" id="check" class="check_input">
+                    <div class="li__container">
+                        <li class="nav__li"><a href="#home">Home</a></li>
+                        <li class="nav__li"><a href="#about">Nosotros</a></li>
+                        <li class="nav__li"><a href="#services">Servicios</a></li>
+                        <li class="nav__li"><a href="#contact">Contacto</a></li>
+                    </div>
+
+                </ul>
+            </nav>
+            <div class="banner__container">
+                <div class="titles">
+                    <div class="title__primary">
+                        <h1 class="animate__animated animate__backInDown">Somos UrbanFitness!</h1>
+                    </div>
+                    <div class="title_secondary">
+                        <h2 class="animate__animated animate__fadeInRight">Vas a encontrar todo lo relacionado al
+                            entrenamiento, rutinas y guias de nutricion</h2>
+                    </div>
+                    <div class="container_btn"><button>Contactanos!</button></div>
+                </div>
+            </div>
+        </header>
+        <main class="container__grid">
+            <div class="title__container">
+                <h1>Sobre Mi</h1>
+            </div>
+            <div class="about" id="about">
+                <div class="image__about">
+                    <img src="./assets/workout.jpg" alt="">
+                </div>
+                <div class="about__text">
+                    <h2>Como entrenador profesional, mi pasión es guiar al mundo hacia un estilo de vida más saludable.
+                        Todo
+                        el mundo es único, con sus propias fortalezas y limitaciones. Mi método es crear un plan
+                        personalizado basado en su salud, horario y, lo que es más importante, objetivos de
+                        acondicionamiento físico. Mi objetivo es que tu mente y tu cuerpo trabajen en armonía,
+                        transformar
+                        tu cuerpo e influenciarte para que tomes decisiones más conscientes cuando se trata de tu salud.
+                    </h2>
+                </div>
+
+            </div>
+            <div class="title__container">
+                <h1>Productos</h1>
+            </div>
+
+            <div class="grid" id="services">
+
+                <div class="product">
+                    <div class="img__container" style="--i:url(./assets/box.jpg)">
+                        <h1 class="title_product">Clases de Boxeo</h1>
+                        <p class="description">Clases personalizadas con tu coach de boxeo, entrenamientos intensivos
+                            para que puedas tener el mejor rendimiento</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img__container" style="--i:url(./assets/caslistenic.jpg)">
+                        <h1 class="title_product">Clases de Calistenia</h1>
+                        <p class="description">Clases personalizadas, entrenamiento con tu peso corporal, ganancia
+                            muscular,guia nutricional, perdida de grasa</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img__container" style="--i:url(./assets/fitness.jpg)">
+                        <h1 class="title_product">Clases de Fitness en general</h1>
+                        <p class="description">Clases personalizadas acorde a tus objetivos, ganancia muscular, cardio
+                            hiit para perdida de grasa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title__container">
+                <h1>Contactanos</h1>
+            </div>
+            <form class="container__form" id="contact">
+                <div class="inputs"><label for="">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <label for="">Email</label>
+                    <input type="email" name="Email" placeholder="Ingrese su Email">
+                    <label for="">Asunto</label>
+                    <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                    <div class="button__container">
+                        <button class="button">Enviar</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </main>
+        <footer class="footer">
+            <h3>Todos los derechos reservados a Julian Garcia</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
