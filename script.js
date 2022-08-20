@@ -5,8 +5,9 @@ const $paragraph = d.getElementById("paragraph")
 const $visits = d.querySelector(".visits")
 
 
-$paragraph.addEventListener("click",(e)=> identificarUsuario(e))
 
+
+$paragraph.addEventListener("click",(e)=> identificarUsuario(e))
 
 const identificarUsuario = (e)=>{
     let identificate = prompt("Ingrese su Nombre para identificarte")
@@ -20,18 +21,18 @@ const identificarUsuario = (e)=>{
 
 
 const obtenerUser = ()=>{
-   let Nombre = localStorage.getItem("user")
-   $paragraph.innerHTML = `<h4>Bienvenid@ ${Nombre || "Anonimo"}</h4>`;
+   let Nombre = localStorage.getItem("user");
+   $paragraph.innerHTML = `<h4>Bienvenid@ ${Nombre !== null ? Nombre  : "Anonimo"}</h4>`;
 }
 obtenerUser()
 
 
 const contador = ()=>{
-if(!localStorage.getItem("visits")){
-   localStorage.setItem("visits", visits)
-}
- 
- visits = +localStorage.getItem("visits")
+   if(!localStorage.getItem("visits")){
+         localStorage.setItem("visits", visits)
+      }
+      
+       visits = +localStorage.getItem("visits")
  const increment = visits + 1;
  localStorage.setItem("visits", increment)
 
